@@ -64,21 +64,27 @@ Disponível → Reservado → Locado → Em vistoria → Em manutenção → Bai
 <p align="center"> <img src="diagramas/05-estados-equipamento.png" alt="Diagrama de máquina de estados" width="80%"> </p>
 📁 Estrutura do repositório
 locafacil-uml/
+│
 ├── README.md
-├── docs/
-│   └── caso-locafacil.md            # resumo do caso e do que foi pedido
-├── diagramas/                       # imagens dos diagramas
-│   ├── 01-casos-de-uso.png
-│   ├── 02-classes.png
-│   ├── 03-sequencia-registrar-devolucao.png
-│   ├── 04-atividades.png
-│   └── 05-estados-equipamento.png
-└── fontes/                          # arquivos editáveis do draw.io
-    ├── 01-casos-de-uso.drawio
-    ├── 02-classes.drawio
-    ├── 03-sequencia-registrar-devolucao.drawio
-    ├── 04-atividades.drawio
-    └── 05-estados-equipamento.drawio
+│
+├── documentacao/
+│   ├── escopo.md
+│   ├── requisitos.md
+│   └── criterios-avaliacao.md
+│
+├── diagramas/
+│   ├── casos-de-uso.md
+│   ├── classes.md
+│   ├── sequencia-registrar-devolucao.md
+│   ├── atividades.md
+│   └── maquina-de-estados.md
+│
+└── imagens/
+    ├── D01-casos-de-uso.png
+    ├── D02-classes.png
+    ├── D03-sequencia-registrar-devolucao.png
+    ├── D04-atividades.png
+    └── D05-maquina-de-estados.png
 🛠️ Como editar os diagramas
 
 Os diagramas foram feitos no draw.io (diagrams.net). Para editar:
