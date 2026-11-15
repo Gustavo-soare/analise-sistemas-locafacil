@@ -61,9 +61,9 @@ Especificar, por meio de diagramas UML, um sistema que informatize o processo de
 
 | Documento | Descrição |
 |---|---|
-| 📄 [Escopo do projeto](documentacao/escopo.md) | A empresa, o problema, o objetivo e os atores do sistema |
-| 📄 [Requisitos](documentacao/requisitos.md) | Cadastros, requisitos funcionais e regras de negócio |
-| 📄 [Critérios de avaliação](documentacao/criterios-avaliacao.md) | Diagramas solicitados, exigências e orientações da atividade |
+| 📄 [Escopo do projeto](documentação/escopo.md) | A empresa, o problema, o objetivo e os atores do sistema |
+| 📄 [Requisitos](documentação/requisitos.md) | Cadastros, requisitos funcionais e regras de negócio |
+| 📄 [Critérios de avaliação](documentação/criterios-avaliacao.md) | Diagramas solicitados, exigências e orientações da atividade |
 
 ## 6. Ferramentas utilizadas
 
