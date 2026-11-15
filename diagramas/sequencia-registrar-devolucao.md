@@ -10,7 +10,7 @@ Este diagrama apresenta a interação entre os objetos durante o caso de uso Reg
 
 <p align="center">
 
-![Diagrama de sequência](../imagens/Diagrama de Sequencia.drawio)
+![Diagrama de sequência](../imagens/Diagrama%20de%20Sequencia.drawio.png)
 
 </p>
 
