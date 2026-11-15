@@ -60,13 +60,13 @@ A documentação foi organizada em arquivos específicos, com o objetivo de faci
 
 ## 7. Diagramas elaborados
 
-Foram elaborados cinco diagramas (D01 a D05), abrangendo as visões funcional, estrutural, de interação e comportamental do sistema.
+Foram elaborados cinco diagramas, abrangendo as visões funcional, estrutural, de interação e comportamental do sistema.
 
-- **D01 — Casos de uso:** identifica os atores Cliente, Atendente e Sistema de Pagamento, com «include» para os passos obrigatórios e «extend» para avaria e atraso.
-- **D02 — Classes:** representa as classes em nível de especificação, com atributos tipados, operações públicas, multiplicidades, composições, enumerações e restrições.
-- **D03 — Sequência:** detalha o caso de uso Registrar Devolução com os estereótipos boundary, control e entity, cobrindo o laço sobre os itens, a alternativa de avaria e a condição de atraso.
-- **D04 — Atividades:** representa o processo completo, da reserva à devolução, com raias para Cliente, Atendente e Sistema.
-- **D05 — Máquina de estados:** representa os estados do equipamento: disponível, reservado, locado, em vistoria, em manutenção e baixado.
+- **Casos de uso:** identifica os atores Cliente, Atendente e Sistema de Pagamento, com «include» para os passos obrigatórios e «extend» para avaria e atraso.
+- **Classes:** representa as classes em nível de especificação, com atributos tipados, operações públicas, multiplicidades, composições, enumerações e restrições.
+- **Sequência:** detalha o caso de uso Registrar Devolução com os estereótipos boundary, control e entity, cobrindo o laço sobre os itens, a alternativa de avaria e a condição de atraso.
+- **Atividades:** representa o processo completo, da reserva à devolução, com raias para Cliente, Atendente e Sistema.
+- **Máquina de estados:** representa os estados do equipamento: disponível, reservado, locado, em vistoria, em manutenção e baixado.
 
 A descrição detalhada de cada diagrama está na pasta `diagramas`.
 
@@ -79,7 +79,7 @@ As imagens dos diagramas estão organizadas na pasta `imagens`. Elas permitem vi
 A organização dos arquivos do projeto está distribuída da seguinte maneira:
 
 ```text
-locafacil-uml/
+analise-sistemas-locafacil/
 │
 ├── README.md
 │
@@ -96,11 +96,11 @@ locafacil-uml/
 │   └── maquina-de-estados.md
 │
 └── imagens/
-    ├── D01-casos-de-uso.png
-    ├── D02-classes.png
-    ├── D03-sequencia-registrar-devolucao.png
-    ├── D04-atividades.png
-    └── D05-maquina-de-estados.png
+    ├── Diagrama Caso de uso.drawio.png
+    ├── Diagrama de Classes.drawio.png
+    ├── Diagrama de Sequencia.drawio.png
+    ├── Diagrama de atividades.drawio.png
+    └── Diagrama de maquina de estado.drawio.png
 ```
 
 ## 10. Considerações finais
