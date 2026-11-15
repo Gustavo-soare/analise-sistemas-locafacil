@@ -84,7 +84,7 @@ Foram elaborados **cinco diagramas**, que cobrem as visões funcional, estrutura
 | 2 | [Classes](diagramas/classes.md) | Classes em nível de especificação, com atributos tipados, operações, multiplicidades e composições |
 | 3 | [Sequência — Registrar Devolução](diagramas/sequencia-registrar-devolucao.md) | Interação com boundary, control e entity, com loop, alt e opt |
 | 4 | [Atividades](diagramas/atividades.md) | Processo da reserva à devolução, com raias para Cliente, Atendente e Sistema |
-| 5 | [Máquina de estados](diagramas/maquina-de-estados.md) | Ciclo de vida do equipamento |
+| 5 | [Máquina de estados](diagramas/maquina-de-estado.md) | Ciclo de vida do equipamento |
 
 ## 8. Galeria dos diagramas
 
