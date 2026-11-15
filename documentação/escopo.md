@@ -1,3 +1,5 @@
+<sub>[🏠 Início](../README.md) › Documentação › Escopo</sub>
+
 # Escopo do Projeto
 
 ## 1. Contexto
@@ -31,3 +33,11 @@ Não fazem parte da modelagem: o funcionamento interno do sistema de pagamento e
 | Cliente | Pessoa que reserva, retira e devolve os equipamentos. |
 | Atendente | Funcionário que opera o balcão e registra as operações no sistema. |
 | Sistema de Pagamento | Sistema externo responsável por processar os pagamentos. |
+
+---
+
+<div align="center">
+
+[🏠 Voltar ao início](../README.md) · [Requisitos ➡️](requisitos.md)
+
+</div>
