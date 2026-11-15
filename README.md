@@ -1,69 +1,84 @@
-<h1 align="center">🏗️ LocaFácil — Modelagem UML</h1> <p align="center"> Especificação UML de um sistema de <b>locação de equipamentos para obras</b>, da reserva à devolução. </p> <p align="center"> <img src="https://img.shields.io/badge/UML-2.5-blue" alt="UML 2.5"> <img src="https://img.shields.io/badge/draw.io-diagramas-orange" alt="draw.io"> <img src="https://img.shields.io/badge/Disciplina-An%C3%A1lise%20de%20Sistemas-orange" alt="Análise de Sistemas"> <img src="https://img.shields.io/badge/IF%20Goiano-2026-darkgreen" alt="IF Goiano"> </p>
-📋 Sumário
-Sobre o projeto
-Diagramas
-1. Casos de uso
-2. Classes
-3. Sequência — Registrar Devolução
-4. Atividades
-5. Máquina de estados
-Estrutura do repositório
-Como editar os diagramas
-Autor
-📌 Sobre o projeto
+# Modelagem UML — Sistema LocaFácil
 
-A LocaFácil aluga equipamentos para obras de pequeno porte: betoneiras, andaimes, compactadores, martelos rompedores e geradores. O controle era feito em planilhas e num caderno de retiradas, o que causava:
+**Aluno:** Seu Nome  
+**Disciplina:** Análise de Sistemas  
+**Professor:** Lacordaire Kemel
 
-❌ reservas duplicadas
-❌ equipamentos entregues sem conferência
-❌ multas de atraso esquecidas
+## 1. Apresentação
 
-Este projeto especifica, em UML, o sistema que informatiza o processo completo:
+Este projeto aplica os conceitos de Análise de Sistemas e da linguagem UML na especificação de um sistema de locação de equipamentos para obras de pequeno porte.
 
-Etapa	O que o sistema faz
-Cadastro	Guarda clientes (CPF, nome e telefone) e equipamentos (código, descrição, diária, categoria e situação).
-Reserva	Consulta a disponibilidade, registra a reserva e calcula o valor previsto. Permite cancelar e expira a reserva quando o cliente não comparece.
-Retirada	Confere os documentos, emite o contrato de locação e registra o pagamento no sistema externo.
-Devolução	Faz a vistoria de cada item, cobra avaria, aplica multa por atraso, encerra a locação e emite o comprovante.
-📊 Diagramas
-1. Diagrama de casos de uso
+A proposta consiste em modelar o processo da empresa desde a reserva até a devolução, considerando o cadastro de clientes e equipamentos, o controle de disponibilidade, a emissão do contrato de locação, o registro de pagamentos, a vistoria dos equipamentos devolvidos e a cobrança de avarias e multas por atraso.
 
-Atores primários Cliente e Atendente, e o ator de apoio Sistema de Pagamento. Os passos que sempre acontecem usam «include», e as situações excepcionais (avaria e atraso) usam «extend», com condição e ponto de extensão.
+## 2. Sistema modelado
 
-<p align="center"> <img src="diagramas/01-casos-de-uso.png" alt="Diagrama de casos de uso" width="100%"> </p>
-2. Diagrama de classes
+A **LocaFácil** é uma empresa que aluga equipamentos como betoneiras, andaimes, compactadores, martelos rompedores e geradores.
 
-Feito em nível de especificação:
+Atualmente, o controle é feito em planilhas e em um caderno de retiradas, o que provoca reservas duplicadas, entrega de equipamentos sem conferência e esquecimento de cobranças de atraso.
 
-atributos privados e tipados, e operações públicas com assinatura completa;
-multiplicidade nas duas pontas de todas as associações;
-composição só onde a parte não existe sem o todo (itens da reserva e da locação);
-enumerações para as situações e tipos;
-restrições entre chaves para as regras que a multiplicidade não mostra.
-<p align="center"> <img src="diagramas/02-classes.png" alt="Diagrama de classes" width="100%"> </p>
-3. Diagrama de sequência — Registrar Devolução
+## 3. Objetivo
 
-Usa os estereótipos de análise boundary, control e entity, com três fragmentos combinados:
+Especificar, por meio de diagramas UML, um sistema que informatize o processo de locação da LocaFácil, da reserva à devolução, representando seus atores, sua estrutura, as interações entre os objetos, o fluxo do processo e o ciclo de vida dos equipamentos.
 
-Fragmento	Situação
-opt	devolução depois da data prevista: aplica a multa por atraso
-loop	para cada item devolvido: registra a vistoria
-alt	com avaria: cobra e envia para manutenção. Sem avaria: libera o equipamento
-<p align="center"> <img src="diagramas/03-sequencia-registrar-devolucao.png" alt="Diagrama de sequência" width="100%"> </p>
-4. Diagrama de atividades
+## 4. Escopo do projeto
 
-O processo completo, da reserva à devolução, com raias para Cliente, Atendente e Sistema. Cobre o cadastro, a reserva (com cancelamento e expiração), a locação direta no balcão, a retirada, o pagamento, a devolução, a multa, as vistorias e o encerramento.
+O projeto contempla a modelagem das seguintes funcionalidades:
 
-<p align="center"> <img src="diagramas/04-atividades.png" alt="Diagrama de atividades" width="70%"> </p>
-5. Diagrama de máquina de estados
+- Cadastro de clientes e equipamentos;
+- Consulta de disponibilidade dos equipamentos;
+- Registro, cancelamento e expiração de reservas;
+- Cálculo do valor previsto da reserva;
+- Conferência de documentos e registro da retirada;
+- Emissão do contrato de locação;
+- Registro do pagamento por sistema externo;
+- Registro da devolução e da vistoria dos itens;
+- Cobrança de avarias e aplicação de multa por atraso;
+- Encerramento da locação e emissão do comprovante;
+- Controle da manutenção e da baixa de equipamentos.
 
-O ciclo de vida de um equipamento:
+## 5. Documentação do projeto
 
-Disponível → Reservado → Locado → Em vistoria → Em manutenção → Baixado
+A documentação foi organizada em arquivos específicos, com o objetivo de facilitar a compreensão do caso e o acompanhamento da modelagem.
 
-<p align="center"> <img src="diagramas/05-estados-equipamento.png" alt="Diagrama de máquina de estados" width="80%"> </p>
-📁 Estrutura do repositório
+| Documento | Descrição |
+|---|---|
+| Escopo do projeto | Define a empresa, o problema, o objetivo e os atores do sistema. |
+| Requisitos | Apresenta os cadastros, os requisitos funcionais e as regras de negócio. |
+| Critérios de avaliação | Relaciona os diagramas solicitados, as exigências e as orientações da atividade. |
+| Diagrama de casos de uso | Apresenta os atores, os casos de uso e os relacionamentos «include» e «extend». |
+| Diagrama de classes | Apresenta as classes em nível de especificação, com atributos, operações e relacionamentos. |
+| Diagrama de sequência | Apresenta as interações do caso de uso Registrar Devolução. |
+| Diagrama de atividades | Apresenta o fluxo do processo da reserva à devolução, com raias. |
+| Diagrama de máquina de estados | Apresenta o ciclo de vida de um equipamento. |
 
+## 6. Ferramentas utilizadas
+
+- **Linguagem de modelagem:** UML 2.5.
+- **Ferramenta de diagramação:** draw.io.
+- **Documentação:** Markdown.
+- **Hospedagem:** GitHub.
+
+## 7. Diagramas elaborados
+
+Foram elaborados cinco diagramas (D01 a D05), abrangendo as visões funcional, estrutural, de interação e comportamental do sistema.
+
+- **D01 — Casos de uso:** identifica os atores Cliente, Atendente e Sistema de Pagamento, com «include» para os passos obrigatórios e «extend» para avaria e atraso.
+- **D02 — Classes:** representa as classes em nível de especificação, com atributos tipados, operações públicas, multiplicidades, composições, enumerações e restrições.
+- **D03 — Sequência:** detalha o caso de uso Registrar Devolução com os estereótipos boundary, control e entity, cobrindo o laço sobre os itens, a alternativa de avaria e a condição de atraso.
+- **D04 — Atividades:** representa o processo completo, da reserva à devolução, com raias para Cliente, Atendente e Sistema.
+- **D05 — Máquina de estados:** representa os estados do equipamento: disponível, reservado, locado, em vistoria, em manutenção e baixado.
+
+A descrição detalhada de cada diagrama está na pasta `diagramas`.
+
+## 8. Imagens
+
+As imagens dos diagramas estão organizadas na pasta `imagens`. Elas permitem visualizar os elementos modelados, os relacionamentos e os fluxos representados em cada diagrama.
+
+## 9. Estrutura do repositório
+
+A organização dos arquivos do projeto está distribuída da seguinte maneira:
+
+```text
 locafacil-uml/
 │
 ├── README.md
@@ -86,14 +101,12 @@ locafacil-uml/
     ├── D03-sequencia-registrar-devolucao.png
     ├── D04-atividades.png
     └── D05-maquina-de-estados.png
+```
 
-🛠️ Como editar os diagramas
+## 10. Considerações finais
 
-Os diagramas foram feitos no draw.io (diagrams.net). Para editar:
+A realização deste projeto possibilitou aplicar os principais diagramas da UML na especificação de um sistema real, partindo da análise do enunciado para a identificação de atores, classes, interações, fluxos e estados.
 
-Acesse app.diagrams.net ou abra o draw.io instalado no computador.
-Clique em Abrir diagrama existente e escolha o arquivo .drawio da pasta fontes/.
-Depois de editar, exporte em Arquivo → Exportar como → PNG e substitua a imagem na pasta diagramas/, com o mesmo nome.
-👤 Autor
+A modelagem da LocaFácil permitiu representar de forma integrada o processo de locação, garantindo coerência entre os diagramas: os casos de uso orientam o diagrama de sequência, as mensagens da sequência correspondem às operações do diagrama de classes, e os estados do equipamento acompanham o fluxo descrito no diagrama de atividades.
 
-Seu Nome Curso — Instituto Federal Goiano Disciplina: Análise de Sistemas · Prof. Lacordaire Kemel
+Dessa forma, o projeto demonstra a importância da modelagem para compreender, documentar e comunicar os requisitos de um sistema antes de sua implementação.
