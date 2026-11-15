@@ -63,6 +63,7 @@ Disponível → Reservado → Locado → Em vistoria → Em manutenção → Bai
 
 <p align="center"> <img src="diagramas/05-estados-equipamento.png" alt="Diagrama de máquina de estados" width="80%"> </p>
 📁 Estrutura do repositório
+
 locafacil-uml/
 │
 ├── README.md
@@ -85,6 +86,7 @@ locafacil-uml/
     ├── D03-sequencia-registrar-devolucao.png
     ├── D04-atividades.png
     └── D05-maquina-de-estados.png
+
 🛠️ Como editar os diagramas
 
 Os diagramas foram feitos no draw.io (diagrams.net). Para editar:
