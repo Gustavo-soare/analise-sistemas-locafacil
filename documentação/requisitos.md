@@ -1,3 +1,5 @@
+<sub>[🏠 Início](../README.md) › Documentação › Requisitos</sub>
+
 # Requisitos
 
 ## 1. Cadastros
@@ -43,3 +45,11 @@ As situações possíveis de um equipamento são: disponível, reservado, locado
 | RN06 | Não havendo avaria, o equipamento volta a ficar disponível imediatamente. |
 | RN07 | Toda locação gera ao menos uma cobrança da própria locação e pode gerar cobranças de avaria e de multa por atraso. |
 | RN08 | Cada cobrança permanece em aberto até que o pagamento seja registrado. |
+
+---
+
+<div align="center">
+
+[⬅️ Escopo](escopo.md) · [🏠 Voltar ao início](../README.md) · [Critérios de avaliação ➡️](criterios-avaliacao.md)
+
+</div>
