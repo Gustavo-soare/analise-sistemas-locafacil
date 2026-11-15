@@ -10,7 +10,7 @@
 
 | 👤 Aluno | 📚 Disciplina | 👨‍🏫 Professor |
 |:---:|:---:|:---:|
-| Seu Nome | Análise de Sistemas | Lacordaire Kemel |
+| Gustavo Henrique Soares | Análise de Sistemas | Lacordaire Kemel Pimenta Cury |
 
 </div>
 
