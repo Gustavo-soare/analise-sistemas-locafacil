@@ -1,14 +1,16 @@
+<sub>[🏠 Início](../README.md) › Documentação › Critérios de avaliação</sub>
+
 # Critérios de Avaliação
 
 ## 1. Diagramas solicitados
 
 | Nº | Diagrama | Exigências |
 |---|---|---|
-| D01 | Casos de uso | Identificar os atores e os relacionamentos «include» e «extend». |
-| D02 | Classes | Nível de especificação, com atributos tipados, assinaturas completas das operações, multiplicidades e relacionamentos adequados. |
-| D03 | Sequência | Caso de uso Registrar Devolução, cobrindo o laço sobre os itens, a alternativa de avaria e a condição de atraso. |
-| D04 | Atividades | Processo completo, da reserva à devolução, com raias para Cliente, Atendente e Sistema. |
-| D05 | Máquina de estados | Ciclo de vida de um equipamento. |
+| 1 | Casos de uso | Identificar os atores e os relacionamentos «include» e «extend». |
+| 2 | Classes | Nível de especificação, com atributos tipados, assinaturas completas das operações, multiplicidades e relacionamentos adequados. |
+| 3 | Sequência | Caso de uso Registrar Devolução, cobrindo o laço sobre os itens, a alternativa de avaria e a condição de atraso. |
+| 4 | Atividades | Processo completo, da reserva à devolução, com raias para Cliente, Atendente e Sistema. |
+| 5 | Máquina de estados | Ciclo de vida de um equipamento. |
 
 ## 2. Orientações da atividade
 
@@ -35,3 +37,11 @@
 
 - **Valor:** 1,0 ponto.
 - **Carga horária:** 3 horas.
+
+---
+
+<div align="center">
+
+[⬅️ Requisitos](requisitos.md) · [🏠 Voltar ao início](../README.md)
+
+</div>
