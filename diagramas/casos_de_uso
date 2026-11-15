@@ -1,0 +1,45 @@
+# D01 — Diagrama de Casos de Uso
+
+## 1. Descrição
+
+Este diagrama apresenta os atores do sistema, as funcionalidades oferecidas a cada um e os relacionamentos «include» e «extend» entre os casos de uso.
+
+## 2. Diagrama
+
+![Diagrama de casos de uso](../imagens/D01-casos-de-uso.png)
+
+## 3. Atores
+
+| Ator | Tipo | Posição |
+|---|---|---|
+| Cliente | Primário | Esquerda |
+| Atendente | Primário | Esquerda |
+| Sistema de Pagamento | Apoio (sistema externo) | Direita |
+
+## 4. Casos de uso
+
+| Ator | Casos de uso |
+|---|---|
+| Cliente | Reservar Equipamentos, Cancelar Reserva |
+| Atendente | Manter Cliente, Manter Equipamento, Registrar Retirada, Registrar Pagamento, Registrar Devolução, Registrar Conclusão do Reparo, Dar Baixa em Equipamento |
+| Sistema de Pagamento | Registrar Pagamento |
+
+## 5. Relacionamentos
+
+| Tipo | Caso base | Caso relacionado | Justificativa |
+|---|---|---|---|
+| «include» | Reservar Equipamentos | Consultar Disponibilidade | Sempre ocorre |
+| «include» | Registrar Retirada | Conferir Documentos do Cliente | Sempre ocorre |
+| «include» | Registrar Retirada | Emitir Contrato de Locação | Sempre ocorre |
+| «include» | Registrar Retirada | Registrar Pagamento | A retirada só se conclui com o pagamento |
+| «include» | Registrar Devolução | Registrar Vistoria | Todo item passa por vistoria |
+| «include» | Registrar Devolução | Emitir Comprovante de Devolução | Sempre ocorre |
+| «extend» | Registrar Vistoria | Cobrar Avaria | **condição:** {vistoria constatou avaria}; **ponto de extensão:** apósLaudo |
+| «extend» | Registrar Devolução | Aplicar Multa por Atraso | **condição:** {devolução após a data prevista}; **ponto de extensão:** apósVistorias |
+
+## 6. Notação
+
+- Associação ator–caso de uso: linha sólida **sem seta**.
+- «include»: seta tracejada **do caso base para o incluído**.
+- «extend»: seta tracejada **do estendente para o caso base**.
+- Cadastros no padrão CRUD: **Manter Cliente** e **Manter Equipamento**.
